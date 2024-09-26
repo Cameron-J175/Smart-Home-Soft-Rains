@@ -1,0 +1,40 @@
+nav {
+    background-color: #5f99f5;
+    padding: 1rem;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+}
+
+nav > h3 > a {
+    margin-right: 4rem;
+    background-color: #80aaa9;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+nav > a {
+    background-color: #8eb4f0;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-right: 3rem;
+    transition-duration: 250ms;
+    transition-property: color, background-color;
+    transition-timing-function: ease;
+}
+
+nav > a:hover {
+    color: #e4e0f5;
+    background-color: #A4AEF5;
+}
+
+nav > h3 > a:hover {
+    color: #e4e0f5;
+    background-color: #638a89;
+}
