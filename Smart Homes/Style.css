@@ -6,6 +6,22 @@ body {
     margin: 0;
 }
 
+
+h1 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
 nav {
     background-color: #021526;
     padding: 1rem;
@@ -23,6 +39,7 @@ nav > a {
     transition-duration: 250ms;
     transition-property: color, background-color;
     transition-timing-function: ease;
+    justify-content: center;
 }
 
 nav > a:hover {
@@ -30,15 +47,35 @@ nav > a:hover {
     background-color: #E2E2B6;
 }
 
+nav > h3 > a:hover {
+    color: #03346E;
+    background-color: #7090a9;
+}
+
 nav > a.active {
     background-color: #03346E;
     color: #E2E2B6;
 }
 
+nav > h3 > a {
+    background-color: #03346E;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #E2E2B6;
+    margin-right: 1rem;
+    transition-duration: 250ms;
+    transition-property: color, background-color;
+    transition-timing-function: ease;
+}
+
+
+
+
 /* IDs */
 #content {
     width: 90vw;
-    background-color: lightgray;
     margin: 1rem auto;
     padding: 1rem;
 }
@@ -46,25 +83,41 @@ nav > a.active {
 /* Classes */
 .flex-parent {
     display: flex;
+    flex-flow: row wrap;
 }
 
 .main-content {
     width: 60%;
     border: solid 1px black;
     padding: 1rem;
+    justify-content: center;
 }
 
 
 .footer-content {
-    width: 30%;
-}
-h1, h2, h3, h4 {
-    font-size: 2rem;
-    margin-top: 0;
+    width: 20vw;
+    flex-flow: row wrap;
+    padding: 1rem;
+    color: white;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0 auto;
 }
 
-footer {
+
+
+.footer {
     background-color: black;
-    color: white;
-    justify-content: space-around;
+    max-height: 500px;
+    position: absolute;
+    width:100%;
+    bottom:0px;
   }
+
+.copyright {
+    width: 50%;
+    align-items: start;
+    padding: 1rem;
+    color: white;
+}
+
