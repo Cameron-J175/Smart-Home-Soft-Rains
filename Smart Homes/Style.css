@@ -26,6 +26,7 @@ nav {
     background-color: #021526;
     padding: 1rem;
     justify-content: space-around;
+    align-content: space-around;
 }
 
 nav > a {
@@ -86,8 +87,13 @@ nav > h3 > a {
     flex-flow: row wrap;
 }
 
+.main {
+    background-color: #333434;
+    flex-flow: row wrap;
+}
 .main-content {
     width: 60%;
+    background-color: darkgray;
     border: solid 1px black;
     padding: 1rem;
     justify-content: center;
@@ -104,7 +110,9 @@ nav > h3 > a {
     margin: 0 auto;
 }
 
+.nav-content {
 
+}
 
 .footer {
     background-color: black;
