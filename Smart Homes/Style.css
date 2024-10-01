@@ -1,39 +1,70 @@
-nav {
-    background-color: #5f99f5;
-    padding: 1rem;
-    align-self: center;
-    margin: auto;
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-nav > h3 > a {
-    margin-right: 4rem;
-    background-color: #80aaa9;
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #021526;
     padding: 1rem;
-    border-radius: 0.25rem;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
+    justify-content: space-around;
 }
 
 nav > a {
-    background-color: black;
+    background-color: #6EACDA;
     padding: 1rem;
     border-radius: 0.25rem;
     display: inline-block;
     text-decoration: none;
-    margin-right: 3rem;
+    color: #E2E2B6;
+    margin-right: 1rem;
     transition-duration: 250ms;
     transition-property: color, background-color;
     transition-timing-function: ease;
 }
 
 nav > a:hover {
-    color: #e4e0f5;
-    background-color: #A4AEF5;
+    color: #03346E;
+    background-color: #E2E2B6;
 }
 
-nav > h3 > a:hover {
-    color: #e4e0f5;
-    background-color: #638a89;
+nav > a.active {
+    background-color: #03346E;
+    color: #E2E2B6;
 }
+
+/* IDs */
+#content {
+    width: 90vw;
+    background-color: lightgray;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+/* Classes */
+.flex-parent {
+    display: flex;
+}
+
+.main-content {
+    width: 60%;
+    border: solid 1px black;
+    padding: 1rem;
+}
+
+
+.footer-content {
+    width: 30%;
+}
+h1, h2, h3, h4 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+  }
