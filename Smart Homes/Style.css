@@ -55,10 +55,20 @@ main > section > figure > p {
 }
 
 
-nav > a.active {
+nav > a.active, nav > h1 > a.active{
     background-color:#E2E2B6;
     color: #03346E;
 }
+
+input {
+    margin: auto;
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+ label {
+    padding: 1rem;
+ }
 
 /* IDs */
 #content {
@@ -118,6 +128,10 @@ nav > a.active {
     top: 0;
     width: 100%;
     padding: 1rem;
-    align-self: center;
     position: top; 
+}
+
+.info-box {
+    background-color: darkgray;
+    margin: auto;
 }
