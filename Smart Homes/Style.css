@@ -86,10 +86,12 @@ section > figure > a {
     margin: 0;
     transition: color 250ms ease,  250ms ease;
     justify-content: center;
-
 }
 
-/* IDs */
+main > section > dl > p {
+    font-size: x-small;
+    text-align: bottom;
+}
 
 
 /* Classes */
@@ -102,16 +104,29 @@ section > figure > a {
 
 .main-content {
     width: 100%;
-    max-width: 40vw;
+    max-width: 400px;
+    background-color: white;
+    border: solid 3px #021526;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.amenities-main {
+    width: 100%;
+    max-width: 400px;
     background-color: white;
     border: solid 6px #03346E;
     padding: 0.5rem;
-    margin: auto;
     margin-top: 0.5rem;
     margin-bottom: 5rem;
-    justify-content: center;
-    align-items: center; 
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -156,16 +171,28 @@ section > figure > a {
     justify-content: center;
 }
 
+.part-two {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
 .info-box {
     background-color: darkgray;
-    width: 25vw;
-    height: 50vh;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.4rem;
+    width: 100%;
+    max-width: 20vw;
+    height: 100%;
+    max-height: 55vh;
     display: flex;
-    flex-flow: column;
-    justify-content: flex-start space-between;
+    flex-flow: column wrap;
+    justify-content: flex-start space-evenly;
     margin-bottom: 5rem;
+    padding: 0.2rem;
+    border: solid 3px #021526;
+    border-radius: 0.2rem;
 }
 
 .map {
@@ -175,24 +202,64 @@ section > figure > a {
     display: flex;
     flex-flow: column wrap;
     margin-bottom: 5rem;
+    border: solid 3px #021526;
 }
 
 .tech-main {
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
     width: 100%;
     max-width: 300;
-    height: auto;
-    margin: auto;
-    margin-top: 10px;
-    padding: 0.2rem 0.2rem;
+    justify-content: center;
 }
 
-.tech-img {
+.amenities-img {
     display: flex;
+    border: solid 3px #021526;
     flex-flow: column wrap;
+    margin-left: 1rem;
+    height: 100%;
+    max-height: 250px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+}
+
+.buyable-products {
+    background-color: #E2E2B6;
+    display: flex;
+    flex-flow: row wrap;
     margin: auto;
-    height: auto;
-    width: 500px;
-    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-content {
+    color: #03346E;
+    text-align: left;
+    max-width: 35ch;
+    margin: auto;
+    margin-left: 0;
+}
+
+.b-contentb {
+    color: #03346E;
+    text-align: right;
+    max-width: 35ch;
+    margin: auto;
+    margin-right: 0;
+}
+.b-head {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #03346E; 
+    background-color:  #E2E2B6;
+    border-top: #021526 solid 10px;
+}
+
+.amentitites-img {
+    display: flex;
+    margin: auto;
 }
