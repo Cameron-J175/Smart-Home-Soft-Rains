@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="nav-position">
         <nav>
             <h1>
                 <a class="active" href="HomePage.html">Smart Homes Inc.</a>
@@ -18,7 +18,7 @@
                 <a href="Amenities-Safety.html" target="_blank">Safety Devices</a>
         </nav>
     </header>
-
+    <section class="alternate">
     <main>
         <section>
             <figure class="house">
@@ -44,16 +44,31 @@
                 <input type="text" id="Phone" name="Phone"><br>
                 <label>City, Sate:</label><br>
                 <input type="text" id="CS" name="CS"><br>
+                <button>Submit</button>
             </section>
             <section>
                 <figure>
-                    <a class="map-link right" href="https://www.google.com/maps/place/Allendale,+CA+95688/@38.4413415,-121.9768462,14z/data=!3m1!4b1!4m6!3m5!1s0x808523d3f351871b:0x7baa3812f40d6b34!8m2!3d38.443588!4d-121.9683466!16s%2Fm%2F048p2lw?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" alt="GoogleMap">View On Map</a>
+                    <a class="map-link" href="https://www.google.com/maps/place/Allendale,+CA+95688/@38.4413415,-121.9768462,14z/data=!3m1!4b1!4m6!3m5!1s0x808523d3f351871b:0x7baa3812f40d6b34!8m2!3d38.443588!4d-121.9683466!16s%2Fm%2F048p2lw?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" alt="GoogleMap">View On Map</a>
                     <img class="map right" src="/Images/Allendale Map.png" width="500" height="400">
                 </figure>
             </section>
         </section>
+            <h2 class="b-head">Amenities</h2>
+        <section class="amenities-preview">
+            <figure>
+                <img src="/Images/robot-mice.png" width="300" height="200" alt="copper-mice">
+                <a href="Amenities-Tech.html"><h4>Smart</h4></a>
+            </figure>
+            <figure>
+                <img src="/Images/cigar-dispensor.png" width="300" height="200" alt="cigar-dispensor">
+                <a href="Amenities-Entertainment"><h4>Entertainment</h4></a>
+            </figure>
+            <figure>
+                <img src="/Images/hoses.png" width="300" height="200" alt="fire hoses">
+                <a href="Amenites-Safety"><h4>Safety</h4></a>
+            </figure>
+        </section>
     </main>
-
     <footer class="footer flex-parent">
         <section class="footer-content">
             <h4>About Us</h4>
@@ -62,7 +77,7 @@
         <section class="footer-content">
             <h4>Contact Us</h4>
             <p>Phone: (000) 1-800-Smart Homes Now<br>
-            Email: <a href="mailto:SmartHomesRB82220@tiafe.com">SmartHomesRB82220@tiafe.com</a></p>
+            Email: <a class="email" href="mailto:SmartHomesRB82220@tiafe.com">SmartHomesRB82220@tiafe.com</a></p>
         </section>
         <section class="footer-content">
             <h4>Communities</h4>

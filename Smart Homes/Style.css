@@ -33,7 +33,6 @@ nav {
     background-color: #021526;
     padding: 1rem;
     text-align: center;
-    position: sticky center;
 }
 
 
@@ -67,25 +66,31 @@ nav > a.active, nav > h1 > a.active{
 
 input {
     margin-top: 0;
-    padding: 0.5rem;
+    padding: 0.3rem;
     justify-content: center;
 }
 
  label {
-    padding: 0.5rem;
+    padding: 0rem;
     margin-left: 0;
  }
 
 section > figure > a {
-    background-color: black;
+    background-color: #03346E;
     padding: 1rem;
     border-radius: 0.25rem;
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: #E2E2B6;
     margin-right: 0;
     transition: color 250ms ease,  250ms ease;
     justify-content: flex-end;
+    border:#021526 solid 3px;
+}
+
+section > figure > a:hover {
+    background-color:#E2E2B6;
+    color: #03346E;
 }
 
 main > section > dl > p, main > section > div > dl > p {
@@ -156,8 +161,9 @@ main > section > dl > p, main > section > div > dl > p {
     color: white;
 }
 
-.nav-head {
-    justify-content: left;
+.nav-position {
+    position: sticky;
+    top: 0;
 }
 
 .house {
@@ -165,7 +171,6 @@ main > section > dl > p, main > section > div > dl > p {
     max-width: 80vw;
     height: auto;
     margin: auto;
-    position: relative;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -194,6 +199,7 @@ main > section > dl > p, main > section > div > dl > p {
     padding: 0.2rem;
     border: solid 3px #021526;
     border-radius: 0.2rem;
+    margin-top: 2rem;
 }
 
 .map {
@@ -204,6 +210,13 @@ main > section > dl > p, main > section > div > dl > p {
     flex-flow: column wrap;
     margin-bottom: 5rem;
     border: solid 3px #021526;
+}
+
+.map-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.1rem;
 }
 
 .tech-main {
@@ -265,6 +278,21 @@ main > section > dl > p, main > section > div > dl > p {
     justify-content: center;
 }
 
+.amenities-preview {
+    background-color: #E2E2B6;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ap-content {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
 
 .b-content {
     color: #03346E;
@@ -304,4 +332,8 @@ main > section > dl > p, main > section > div > dl > p {
 
 .left {
     margin-left: 3rem
+}
+
+.email {
+    color: #E2E2B6;
 }
